@@ -1,0 +1,86 @@
+
+Appendix A - Specific Use Case
+Web Phishing
+External
+C-level executives from the customers of received an email informing them there is going to be an event to celebrate the end of the year. In order to reserve a seat and get further information they would have to login with their internal credentials to the website to include in the email. Once the victims/ customers use their credentials to log in the provided Phishing website the attackers gather the data to further escalate their attack in the clients.
+
+Internal
+Monday morning an internal email is sent to employees for checking their bonuses. To see the amount that is going to be paid to each of them they have to click on the link provided and log in with their credentials.
+
+Special Considerations
+1. Phishing attacks can be extremely accurate and well researched (Spear-phishing)
+2. The goal of the attackers is to lure a victim to navigate to a web page they control and trick the users to use their credentials.
+3. Inform the security team or the designated entity according to policies.
+4. If an email is suspicious it should be brought to the attention of the security team.
+5. For external web phishing cases make sure that the clients receive regular emails raising awareness for phishing stating the official channels of communications (websites, phone numbers, etc.)
+
+
+Ransom Demands
+Ransom demands may be directed at your organisation. A common example is ransomware - asking for a sum of money to give access back to files. Although it may not seem beneficial to pay the ransom, the advantages and disadvantages of doing so should be considered before any decisions are made. It may be cheaper to pay the ransom and then bolster defences than spend time and money attempting to decrypt the files or recover the data; however, it is not guaranteed that the attacker will decrypt any files. 
+Ransom demands may not just be in the form of ransomware. KTB may receive emails threatening to leak customer data or other physical or digital threats. These threats should be investigated for their credibility and the benefits of paying any ransom thoroughly assessed.
+
+
+Special Considerations
+	1. Ransom demands usually come with an associated threat if the ransom is not paid. Assess the credibility of the threat before 	making any decisions, for example:
+		a) If an attacker is threatening to leak data, try to obtain a sample of the data to determine if it is actually of 			concern.
+		b) If an attacker has encrypted files, try to get a sample of them decrypted to see if the functionality exists.
+	2. Save a copy of the ransom email as it may be examined by the authorities.
+	3. Be aware that the attacker may not necessarily hold up their end of the ransom once the money is received.
+	4. Inform the Incident Coordinator of any credible ransom demands.
+
+
+Appendix B - IOC List, Typical Forensic Artefacts and Contextual Information
+Requirements
+Indicators of Compromise
+Indicators convey specific observable patterns combined with contextual information intended to represent artefacts and/or behaviours of interest within a cyber-security context. They consist of one or more observable patterns potentially mapped to a related Tactic, Technique or Procedure (TTP).
+
+The following is a non-exhaustive list of Indicators of Compromise (IOCS) to be leveraged during Incident Response (IR) investigations:
+
+	•IP Addresses
+	•File Hashes (MD5, SHA1, SHA256 etc.)
+	•URLS
+	•URIS
+	•Domain Name
+	•Domain Registrant Information
+	•Virus Signatures
+	•File Name
+	•Autonomous System Number (ASN)
+	•User Defined Input (usernames, passwords etc.)
+	•User Agents (UAS)
+	•Unique / Identifiable Strings
+	•Network Traffic patterns
+	•Any item of intelligence that can directly indicate suspicious activity
+
+
+Typical Forensic Artefacts
+The following list details typical forensic artefacts that may be of interest during an investigation:
+	•Operating System Logs (Windows Event Logs, syslog, etc.)
+	•Application Specific Logs
+	•Application Configuration Files
+	•Operating System configuration files
+	•Windows Registry Files
+	•Deleted Files / Recycle Bin Contents
+	•User Specific folder files
+	•Internet History Databases
+	•Email storage files (ost, mbox etc.)
+	•Application Data folder
+	•Temporary folders
+	•Hibernation files
+	•Page files
+	•Crash Dumps
+	•Server Management Logs
+	•Networking Details
+
+Contextual Information Requirements
+During any incident, analysts should aim to identify the following background information. This will assist with ongoing investigation, analysis, timelining, containment and remediation:
+	
+	•Dates and Times of reported suspicious activity Affected persons views on the suspicious behaviour
+	•Actions taken immediately prior to the initial incident
+	•Actions taken immediately after the initial incident
+	•Affected systems roles
+	•Critical business data stored on or associated with affected systems
+	•Normal working behaviour of affected systems
+	•Normal working behaviour or affected business unit and personnel
+	•Other recent incidents affecting the same or similar systems
+	•Historical incidents similar to ongoing issue
+	•Time sensitivity / downtime issues likely to impact decision making

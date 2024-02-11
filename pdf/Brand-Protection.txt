@@ -1,0 +1,191 @@
+ภาคผนวก A - กรณีการใช้งานเฉพาะ
+
+Domain Hijacking / Domain Squatting
+Domain Hijacking is the process of purchasing a domain that is owne when the domain expires,
+Domain Squatting involve the purchasing and holding of a domain in order to profit trademark,
+Although not illegal, these techniques can be dealt with as a violation trademark and thr Profit Protection and Legal teams should be informed.
+
+
+Special Considerations
+1. Inform Profit Protection / Legal of the situation in order to recover the target domain as soon as possible.
+2. Monitor any activity coming from the offending domain, as it may be part of a phishing
+campaign. Request that Group-IB add the domain(s) to their watch-list.
+
+
+Website Defacement / Alteration
+A defacement or alteration website is a high profile attack agains brand. Although protection of the brand is necessary, the immediate concern should be discovering how the website was changed as modification is indicative of unauthorised access or malicious code.
+
+
+Special Considerations
+1. Consult the Unauthorised Access Playbook to ensure that an attacker is not currently within networks,
+2. Inform the Profit Protection / Legal / Comms teams as soon as possible as they will likely want to respond to such a high profile attack.
+3. After the immediate threat has been eradicated, the web server hosting the affected website should be restored from a safe backup.
+
+
+Phishing Campaigns
+Attackers may launch phishing campaigns that involve brand, Althoug may have nothing to do with any emails or mirror websites set up by an attacker, customers may not necessarily be able to tell the difference between legitimate and fraudulent websites or emails.
+
+
+Special Considerations
+1. If website has been fraudulently replicated, examine the webserver logs for any requests that may indicate spidering or copying activity.
+2. Inform the relevant teams (Profit Protection / Legal / Comms) to take down the website/domain and inform customers about the risks of navigating to the fraudulent website/domain.
+3. Examine any fraudulently mirrored sites for any unique features that would only be known to an internal employee - this may be indicative of an Insider Threat or other cases of unauthorised
+access.
+4. Consult the Suspicious Email for any actions on how to respond to any suspicious emails that are sent as part of the phishing campaign.
+5. If emails are being spoofed to appear to be coming, try to ascertain the true source of the emails and take remediating action, such as blocking and reporting the source, and informing the Legal / Comms teams.
+
+
+Appendix B - IOC List, Typical Forensic Artefacts and Contextual Information Requirements
+Indicators of Compromise
+Indicators convey specific Observable patterns combined with contextual information intended to represent artefacts and/or behaviours of interest within a cyber-security context. They consist of one or more Observable patterns potentially mapped to a related Tactic, Technique or Procedure (TTP).
+The following is a non-exhaustive list of Indicators of Compromise (IOCS) to be leveraged during Incident Response (IR) investigations:
+
+	•IP Addresses
+	•File Hashes (MD5, SHA1, SHA256 etc.)
+	•URLS URIS
+	•Domain Name
+	•Domain Registrant Information
+	•Virus Signatures
+	•File Name
+	•Autonomous System Number (ASN)
+	•User Defined Input (usernames, passwords etc.)
+	•User Agents (UAS)
+	•Unique / Identifiable Strings
+	•Network Traffic patterns
+	•Any item of intelligence that can directly indicate suspicious activity
+
+Typical Forensic Artefacts
+The following list details typical forensic artefacts that may be of interest during an investigation:
+	•Operating System Logs (Windows Event Logs, syslog, etc.)
+	•Application Specific Logs
+	•Application Configuration Files
+	•Operating System configuration files
+	•Windows Registry Files
+	•Deleted Files / Recycle Bin Contents
+	•User Specific folder files
+	•Internet History Databases
+	•Email storage files (ost, mbox etc.)
+	•Application Data folder
+	•Temporary folders
+	•Hibernation files
+	•Page files
+	•Crash Dumps
+	•Server Management Logs
+	•Networking Details
+
+Contextual Information Requirements
+During any incident, analysts should aim to identify the following background information. This will assist with ongoing investigation, analysis, timelining, containment and remediation:
+
+
+	•Dates and Times of reported suspicious activity
+	•Affected persons views on the suspicious behaviour
+	•Actions taken immediately prior to the initial incident
+	•Actions taken immediately after the initial incident
+	•Affected systems roles
+	•Critical business data stored on or associated with affected systems Normal working behaviour of affected systems
+	•Normal working behaviour or affected business unit and personnel
+	•Other recent incidents affecting the same or similar systems
+	•Historical incidents similar to ongoing issue
+	•Time sensitivity / downtime issues likely to impact decision making
+
+
+Appendix C - List of reporting sites and blacklists
+Fraudulent Domain Reporting
+ThaiCert is Thailand's national Computer Emergency Response team. The following link can be used to report a fraudulent domain:
+https://www.thaicert.or.th/report-en.html
+The domain registrar should always be contacted about instances of misuse or malicious activity. Check the registrar's website for instructions on how to submit an abuse report.
+
+
+Blacklists
+There are several online blacklists that a suspicious domain can be added to. Reporting a domain to these blacklists can lower the reputation of any email sent from the domain, increasing the likelihood that it will be blocked automatically by some commercial software. The following are some resources that can be used to report malicious domains/emails:
+
+spamcop.net - This service can be used for reporting spam email.
+uribl.com - uribl.com primarily deals with Unsolicited Bulk/Commercial Email (UBE/UCE).
+Local ISPs
+Web-Browser Vendors
+
+
+
+แปลไทย
+
+
+1. Domain Hijacking / Domain Squatting
+Domain Hijacking: การแย่งชิงโดเมนเนม คือ การเข้าควบคุมโดเมนเนมที่คนอื่นเป็นเจ้าของอยู่ โดยมักเกิดขึ้นเมื่อโดเมนหมดอายุ
+Domain Squatting: การซื้อและถือครองโดเมนเนม เพื่อหวังผลกำไรจากชื่อแบรนด์ที่เป็นเครื่องหมายการค้า แม้จะไม่ผิดกฎหมาย แต่ถือเป็นการละเมิดทรัพย์สินทางปัญญา ควรแจ้งฝ่ายกฎหมายและทีมคุ้มครองกำไรทราบ
+	ข้อควรพิจารณา
+	1.แจ้งฝ่ายกฎหมาย/คุ้มครองกำไร เพื่อฟื้นฟูดโดเมนเนมที่ถูกแย่งชิงโดยเร็วที่สุด
+	2.ตรวจสอบกิจกรรมใดๆ จากโดเมนเนมที่ละเมิด อาจเป็นส่วนหนึ่งของแคมเปญฟิชชิ่ง แจ้ง Group-IB ให้เพิ่มโดเมนเนมเหล่านั้นลงในรายการเฝ้าระวัง
+2. Website Defacement / Alteration
+Website Defacement / Alteration: การโจมตีเว็บไซต์เพื่อเปลี่ยนโฉมหน้า เป็นการโจมตีแบรนด์ที่มีผลกระทบรุนแรง ถึงแม้การปกป้องแบรนด์เป็นสิ่งสำคัญ แต่อันดับแรกคือการค้นหาว่าเว็บไซต์ถูกดัดแปลงอย่างไร เนื่องจากการดัดแปลงบ่งชี้ถึงการเข้าถึงโดยไม่ได้รับอนุญาตหรือมีมัลแวร์
+	ข้อควรพิจารณา
+	1.อ้างอิงคู่มือการเข้าถึงโดยไม่ได้รับอนุญาต เพื่อให้แน่ใจว่าไม่มีผู้โจมตีอยู่ในเครือข่าย
+	2.แจ้งฝ่ายกฎหมาย/คุ้มครองกำไร/ประชาสัมพันธ์โดยเร็วที่สุด เนื่องจากพวกเขาอาจต้องการตอบโต้ต่อการโจมตีที่ส่งผลกระทบรุนแรงนี้
+หลังจากกำจัดภัยคุกคามเรียบร้อยแล้ว ควรคืนค่าเว็บเซิร์ฟเวอร์ที่โฮสต์เว็บไซต์ที่ได้รับผลกระทบจากข้อมูลสำรองที่ปลอดภัย
+3. Phishing Campaigns
+Phishing Campaigns: แคมเปญฟิชชิ่ง คือการโจมตีที่ใช้แบรนด์เป็นเหยื่อ แม้บริษัทฯ อาจไม่มีส่วนเกี่ยวข้องกับอีเมลหรือเว็บไซต์ปลอมที่ผู้โจมตีสร้างขึ้น ลูกค้าอาจแยกไม่ออกระหว่างเว็บไซต์/อีเมลที่ถูกกฎหมายกับของปลอม
+ข้อควรพิจารณาพิเศษ
+
+ข้อควรพิจารณา
+	1.ตรวจสอบล็อกเว็บเซิร์ฟเวอร์: หากเว็บไซต์ถูกปลอมแปลง ให้ตรวจสอบล็อกเว็บเซิร์ฟเวอร์เพื่อหาการร้องขอใดๆ ที่อาจบ่งชี้ถึงกิจกรรมการรวบรวมข้อมูล (spidering) หรือคัดลอกข้อมูล
+	2.แจ้งทีมที่เกี่ยวข้อง: แจ้งทีมป้องกันผลกำไร ทีมกฎหมาย และทีมสื่อสาร เพื่อดำเนินการปิดเว็บไซต์/โดเมนปลอม และแจ้งเตือนลูกค้าเกี่ยวกับความเสี่ยงในการเข้าถึงเว็บไซต์/โดเมนปลอมเหล่านั้น
+	3.ตรวจสอบคุณสมบัติพิเศษ: วิเคราะห์เว็บไซต์ที่ถูกปลอมแปลงเพื่อหาคุณสมบัติพิเศษใดๆ ที่อาจทราบได้เฉพาะพนักงานภายในเท่านั้น ซึ่งอาจเป็นสัญญาณบ่งชี้ถึงภัยจากภายในองค์กรหรือการเข้าถึงโดยไม่ได้รับอนุญาตกรณีอื่นๆ
+	4.แนวทางวิเคราะห์อีเมลน่าสงสัย: อ้างอิงแนวทางการจัดการกับอีเมลน่าสงสัย เพื่อดูวิธีการตอบสนองต่ออีเมลน่าสงสัยที่ถูกส่งมาเป็นส่วนหนึ่งของแคมเปญฟิชชิง
+	5.ตรวจสอบอีเมลปลอม: หากมีการปลอมแปลงอีเมลให้ดูเหมือนมาจากบริษัท ใหพยายามยืนยันแหล่งที่มาที่แท้จริงของอีเมลนั้น และดำเนินการแก้ไข เช่น ปิดกั้นและรายงานแหล่งที่มา และแจ้งให้ทีมกฎหมาย/ทีมสื่อสารทราบ
+
+บทความภาคผนวก 2 - รายการตัวชี้วัดความเสี่ยง (IOCs) หลักฐานทางนิติวิทยาศาสตร์ทั่วไป และความต้องการข้อมูลบริบท
+ตัวชี้วัดความเสี่ยง (Indicators of Compromise - IOCs)
+ตัวชี้วัดความเสี่ยง คือ สัญญาณที่บ่งชี้กิจกรรมน่าสงสัยภายในบริบทด้านความปลอดภัยไซเบอร์ มันประกอบด้วยรูปแบบที่สังเกตได้ (Observable patterns) ร่วมกับข้อมูลบริบท เพื่อแสดงหลักฐานและ/หรือพฤติกรรมที่น่าสนใจ ตัวชี้วัดเหล่านี้มักจะถูกรวบรวมเป็นรายการและเชื่อมโยงกับกลยุทธ์ เทคนิค และกระบวนการ (Tactic, Technique, or Procedure - TTP)
+
+รายการตัวชี้วัดความเสี่ยงตัวอย่าง (ไม่ครบทั้งหมด) ที่ใช้ประโยชน์ในการสืบสวนตอบโต้เหตุการณ์ (Incident Response - IR):
+
+	• หมายเลข IP แอดเดรส
+	• Hash ไฟล์ (MD5, SHA1, SHA256 ฯลฯ)
+	• URL, URI
+	• ชื่อโดเมน
+	• ข้อมูลผู้จดทะเบียนโดเมน
+	• ลายเซ็นต์ไวรัส
+	• ชื่อไฟล์
+	• หมายเลขระบบอัตโนมัติ (Autonomous System Number - ASN)
+	• ข้อมูลที่ผู้ใช้กำหนด (ชื่อผู้ใช้ รหัสผ่าน ฯลฯ)
+	• User Agents (UAS)
+	• สตริงที่ไม่ซ้ำ/ระบุตัวตนได้
+	• รูปแบบการรับส่งข้อมูลบนเครือข่าย
+	• ข้อมูลใดๆ ที่ชี้ให้เห็นกิจกรรมน่าสงสัยโดยตรง
+หลักฐานทางนิติวิทยาศาสตร์ทั่วไป
+   รายการต่อไปนี้แสดงรายละเอียดหลักฐานทางนิติวิทยาศาสตร์ทั่วไปที่อาจเป็นประโยชน์ระหว่างการสืบสวน:
+	• บันทึกระบบปฏิบัติการ (Windows Event Logs, syslog ฯลฯ)
+	• บันทึกแอปพลิเคชันเฉพาะ
+	• ไฟล์การกำหนดค่าแอปพลิเคชัน
+	• ไฟล์การกำหนดค่าระบบปฏิบัติการ
+	• ไฟล์รีจิสทรี Windows
+	• ไฟล์ที่ถูกลบ / เนื้อหาถังขยะ
+	• ไฟล์โฟลเดอร์เฉพาะผู้ใช้
+	• ฐานข้อมูลประวัติการใช้งานอินเทอร์เน็ต
+	• ไฟล์ที่เก็บอีเมล (ost, mbox ฯลฯ)
+	• โฟลเดอร์ข้อมูลแอปพลิเคชัน
+	• โฟลเดอร์ชั่วคราว
+	• ไฟล์ไฮเบอร์เนต
+	• ไฟล์เพจ
+	• Crash Dumps
+	• บันทึกการจัดการเซิร์ฟเวอร์
+	• รายละเอียดเครือข่าย
+ความต้องการข้อมูลบริบท
+   ระหว่างเกิดเหตุการณ์ใดๆ นักวิเคราะห์ควรพยายามระบุข้อมูลพื้นฐานต่อไปนี้ เนื่องจากจะช่วยในการสืบสวน วิเคราะห์ กำหนดกรอบเวลา ควบคุม และแก้ไขปัญหา
+	• วันและเวลาที่รายงานกิจกรรมน่าสงสัย
+	• มุมมองของบุคคลที่ได้รับผลกระทบต่อพฤติกรรมน่าสงสัย
+	• การดำเนินการก่อนเกิดเหตุการณ์เริ่มต้นทันที
+	• การดำเนินการหลังเกิดเหตุการณ์เริ่มต้นทันที
+	• บทบาทของระบบที่ได้รับผลกระทบ
+	• ข้อมูลธุรกิจสำคัญที่ถูกจัดเก็บหรือเกี่ยวข้องกับระบบที่ได้รับผลกระทบ
+	• พฤติกรรมการทำงานปกติของระบบที่ได้รับผลกระทบ
+	• พฤติกรรมการทำงานปกติของหน่วยธุรกิจและบุคลากรที่ได้รับผลกระทบ
+	• เหตุการณ์ล่าสุดอื่นๆ ที่ส่งผลกระทบต่อระบบเดียวกันหรือคล้ายกัน
+	• เหตุการณ์ในอดีตที่คล้ายกับปัญหาที่เกิดขึ้น
+	• ความเร่งด่วน/ปัญหาการหยุดทำงานที่อาจส่งผลต่อการตัดสินใจ
+
+บทความภาคผนวก ซี - เว็บไซต์สำหรับรายงานและบัญชีดำ
+การรายงานโดเมนปลอม
+	ThaiCert คือ ทีมตอบสนองเหตุการณ์ฉุกเฉินด้านคอมพิวเตอร์ระดับชาติของประเทศไทย สามารถใช้ลิงก์ต่อไปนี้เพื่อรายงานโดเมนปลอม:
+	https://www.thaicert.or.th/report-en.html
+
+ควรติดต่อผู้ให้บริการจดทะเบียนโดเมนเสมอ
