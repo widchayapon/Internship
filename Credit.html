@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="Image\logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .container {
+        background-color: white; /* เปลี่ยนสีพื้นหลังของ container เป็นสีขาว */
+        padding: 20px; /* เพิ่ม padding เพื่อให้มีช่องว่างรอบขอบ */
+        border-radius: 10px; /* เพิ่มขอบเขตรอบ container */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ container */
+        opacity: 0.8.5;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        text-align: center;
+      }
+    </style>
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="Image\logo.png"  alt="Logo" class="img-fluid me-2" style="height: 50px;">
+        Cybertron
+    </a>
+      <div class="navbar-main" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Type
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Malware.html">Malware</a></li>
+              <li><a class="dropdown-item" href="Unauthorized_Access.html">Unauthorized Access</a></li>
+              <li><a class="dropdown-item" href="Web_Application_Compromise.html">Web Application Compromise</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Credit.html">Credit</a>
+          </li>  
+        </ul>
+      </div>
+     
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1> Web Playbook Cybertron </h1>
+    <p>"Welcome to our website! This site has been created by interns from Khon Kaen University to provide manuals and essential information for your work</p>
+    <p> Thank you for visiting us, and We hope the resources provided here will be beneficial to you.</p>
+  </div>
+  <div style="margin-left: 85%; margin-top: 15%;" class="loader"></div>
+  <footer class="footer mt-auto py-1 bg-light">
+    <div class="container text-center">
+      <span class="text-muted">© 2024 Web Playbook Cybertron</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
